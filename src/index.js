@@ -38,9 +38,17 @@ const counter = (state = 0, action) => {
     case "DECREMENT":
       return state - 1;
   }
-}
+};
+
+let store = createStore(counter);
+
+//display it in the console
+
+store.subscribe(() => console.log(store.getState()));
+
 
 //DISPATCH excecutes action
+store.dispatch(increment());
 
 
 ReactDOM.render(
