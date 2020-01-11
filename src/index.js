@@ -21,6 +21,12 @@ const increment = () => {
   }
 }
 
+const decrement = () => {
+  return {
+    type: DECREMENT
+  }
+}
+
 //REDUCER describes how actions transform state to the next state
 
 //DISPATCH excecutes action
